@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Issues Tracker</title>
+    <!-- External CSS and Scripts -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-
 </head>
+
+<!-- Login Section -->
+    <section id="loginPage" class="flex justify-center items-center min-h-screen bg-slate-50">
+        <div class="card bg-white w-96 shadow-2xl p-10 text-center border border-gray-100">
+            <div class="mb-6">
+                <i class="fa-brands fa-github text-6xl"></i>
+                <h2 class="text-2xl font-extrabold mt-4">GitHub Issues Tracker</h2>
+                <p class="text-gray-400 text-sm">Sign in to manage your issues</p>
+            </div>
+            <!-- Enter-Button -->
+            <form onsubmit="handleLogin(event)" class="space-y-4 text-left">
+                <div class="form-control">
+                    <label class="label font-bold text-xs uppercase text-gray-500">Username</label>
+                    <input id="usernameInput" type="text" placeholder="Enter username" class="input input-bordered focus:input-primary" required />
+                </div>
+                <div class="form-control">
+                    <label class="label font-bold text-xs uppercase text-gray-500">Password</label>
+                    <input id="passwordInput" type="password" placeholder="Enter password" class="input input-bordered focus:input-primary" required />
+                </div>
+                <button type="submit" class="btn btn-primary w-full mt-4 text-white font-bold">Sign In</button>
+            </form>
+
+            <!-- Password Demo Text -->
+            <div class="mt-8 p-4 bg-slate-100 rounded-xl text-xs text-left border border-dashed border-gray-300">
+                <p><strong>Username:</strong> admin</p>
+                <p><strong>Password:</strong> admin123</p>
+            </div>
+        </div>
+    </section>
+
+
 
 <body>
     
