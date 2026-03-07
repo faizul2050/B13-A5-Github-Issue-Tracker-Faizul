@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Custom Button */
+.btn-primary {
+    background-color: #6366f1; /* Indigo color like GitHub/Figma */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4f46e5;
+}
+
+/* Card Custom Style */
+.issue-card {
+    transition: transform 0.2s ease;
+}
+
+.issue-card:hover {
+    transform: translateY(-5px);
+}
