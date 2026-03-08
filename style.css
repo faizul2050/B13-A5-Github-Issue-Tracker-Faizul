@@ -11,3 +11,11 @@
     background-color: #4f46e5;
 }
 
+/* Card Custom Style */
+.issue-card {
+    transition: transform 0.2s ease;
+}
+
+.issue-card:hover {
+    transform: translateY(-5px);
+}
