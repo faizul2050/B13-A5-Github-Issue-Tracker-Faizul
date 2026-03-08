@@ -21,7 +21,7 @@
                 <p class="text-gray-400 text-sm">Sign in to manage your issues</p>
             </div>
             
-            <!-- Enter Button -->
+            <!-- Using form so the 'Enter' button will work -->
             <form onsubmit="handleLogin(event)" class="space-y-4 text-left">
                 <div class="form-control">
                     <label class="label font-bold text-xs uppercase text-gray-500">Username</label>
@@ -31,11 +31,11 @@
                     <label class="label font-bold text-xs uppercase text-gray-500">Password</label>
                     <input id="passwordInput" type="password" placeholder="Enter password" class="input input-bordered focus:input-primary" required />
                 </div>
-                <!-- 'submit'-->
+                <!-- Button type must be 'submit' -->
                 <button type="submit" class="btn btn-primary w-full mt-4 text-white font-bold">Sign In</button>
             </form>
 
-            <!-- Password Demo -->
+            <!-- Password demo text updated -->
             <div class="mt-8 p-4 bg-slate-100 rounded-xl text-xs text-left border border-dashed border-gray-300">
                 <p><strong>Username:</strong> admin</p>
                 <p><strong>Password:</strong> admin123</p>
